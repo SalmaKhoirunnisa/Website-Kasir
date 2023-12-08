@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Kasir</title>
+  <!-- Include your CSS and JavaScript libraries here -->
+    <!-- ... -->
+    <link rel="stylesheet" type="text/css" href="styless.css">
+    <!-- ... -->
+
+</head>
+<body>
+
+<!-- Login Page -->
+<div id="loginPage">
+  <!-- Add the logo at the top left corner -->
+  <img src="0001.png" alt="Logo" class="logo">
+  <h1>Login</h1>
+  <form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="button" id="loginButton">Login</button>  </form>
+</div>
+<!-- Dashboard Page -->
+<div id="dashboardPage" style="display: none;">
+  <!-- Add the logo at the top left corner -->
+  <img src="0001.png" alt="Logo" class="logo">
+  <h1>Dashboard</h1>
+  <label for="kasirName">Nama Kasir:</label>
+  <input type="text" id="kasirName" name="kasirName" required>
+  <button id="captureSelfie">Ambil Selfie</button>
+
+  <!-- Pembukuan Section -->
+  <h2>Pembukuan</h2>
+  <div id="barangMasuk">
+    <h3>Input Barang Masuk</h3>
+    <!-- Add input fields for barang masuk -->
+<!-- Tabel untuk input barang masuk -->
+<table>
+    <tr>
+      <th>Nama Barang</th>
+      <th>Jumlah</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td><input type="text" id="namaBarangMasuk" placeholder="Nama Barang" /></td>
+      <td><input type="number" id="jumlahBarangMasuk" placeholder="Jumlah" /></td>
+    </tr>
+  </table>
+    <button id="inputBarangMasuk">Input Barang Masuk</button>
+  
+</div>
+  
+  <div id="barangKeluar">
+    <h3>Input Barang Keluar</h3>
+    <!-- Add input fields for barang keluar -->
+    <table>
+        <tr>
+          <th>Nama Barang</th>
+          <th>Jumlah</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td><input type="text" id="namaBarangKeluar" placeholder="Nama Barang" /></td>
+          <td><input type="number" id="jumlahBarangKeluar" placeholder="Jumlah" /></td>
+          
+        </tr>
+      </table>
+    <button id="inputBarangKeluar">Input Barang Keluar</button>
+  </div>
+
+  <div id="laporanPenjualanHarian">
+    <h3>Laporan Penjualan Harian</h3>
+    <!-- Add logic and display for laporan penjualan harian -->
+  <!-- Tabel untuk input penjualan harian -->
+  <table>
+    <tr>
+      <th>Nama Barang</th>
+      <th>Jumlah</th>
+      <th>Harga</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td><input type="text" id="namaBarangHarian" placeholder="Nama Barang" /></td>
+      <td><input type="number" id="jumlahBarangHarian" placeholder="Jumlah" /></td>
+      <td><input type="number" id="hargaBarangHarian" placeholder="Harga" /></td>
+      <td><button id="inputPenjualanHarian">Input laporan harian</button></td>
+    </tr>
+  </table>
+</div>
+
+  <div id="laporanPenjualanBulanan">
+    <h3>Laporan Penjualan Bulanan</h3>
+    <!-- Add logic and display for laporan penjualan bulanan -->
+  <!-- Tombol untuk menampilkan laporan penjualan bulanan -->
+  <button id="hitungDanSimpanLaporanBulanan">Hitung dan Simpan Laporan Bulanan</button>
+</div>
+
+<div id="daftarHargaBarang">
+  <h3>Daftar Harga Barang</h3>
+  <!-- Tabel untuk daftar harga barang -->
+  <table>
+    <tr>
+      <th>Nama Barang</th>
+      <th>Harga</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td><input type="text" id="namaBarang" placeholder="Nama Barang" /></td>
+      <td><input type="number" id="hargaBarang" placeholder="Harga" /></td>
+      <td><button id="tambahDaftarHarga">Tambah Daftar Harga</button></td>
+    </tr>
+  </table>
+</div>
+
+  <div id="daftarHargaBarang">
+    <h3>Daftar Harga Barang</h3>
+    <!-- Add logic and display for daftar harga barang -->
+  <!-- Tabel untuk daftar harga barang -->
+  <table>
+</div>
+
+<!-- Kasir Page -->
+<div id="kasirPage" style="display: none;">
+    <h1>Kasir</h1>
+    <div id="inputBarangTerjual">
+      <h2>Input Barang Terjual</h2>
+      <!-- Add input fields for barang terjual -->
+      <!-- Tabel untuk daftar harga barang -->
+      <table>
+        <tr>
+          <th>Nama Barang</th>
+          <th>Harga</th>
+          <th>Jumlah</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td><input type="text" id="namaBarangTerjual" placeholder="Nama Barang" /></td>
+          <td><input type="number" id="hargaBarangTerjual" placeholder="Harga" /></td>
+          <td><input type="number" id="jumlahBarangTerjual" placeholder="Jumlah" /></td>
+          <td><button id="inputPenjualan">Input Penjualan</button></td>
+        </tr>
+      </table>
+    </div>
+</div>
+
+<!-- Include your JavaScript files at the end -->
+<script src="login.js"></script>
+<script src="camera.js"></script>
+<script src="barang.js"></script>
+<script src="server.js"></script>
+<script src=".env"></script>
+</body>
+</html>

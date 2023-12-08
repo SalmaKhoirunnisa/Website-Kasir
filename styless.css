@@ -1,0 +1,72 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dfdce3;
+    color: #ffffff; /* Warna teks putih */
+    margin: 0;
+  }
+  
+  #loginPage, #dashboardPage, #kasirPage {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #4abdac;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  #loginPage h1, #dashboardPage h1, #kasirPage h1 {
+    color: #fc4a1a;
+  }
+  
+  #loginForm label {
+    color: #4abdac;
+  }
+  
+  #loginForm button, #captureSelfie,#inputlaporanharian, #inputBarangMasuk, #inputBarangKeluar, #inputPenjualan, #tambahDaftarHarga, #tampilkanLaporanHarian, #hitungDanSimpanLaporanBulanan {
+    background-color: #4abdac;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #loginForm button:hover, #captureSelfie:hover, #inputBarangMasuk:hover, #inputBarangKeluar:hover, #inputlaporanharian, #inputPenjualan:hover, #tambahDaftarHarga:hover, #tampilkanLaporanHarian:hover, #hitungDanSimpanLaporanBulanan:hover {
+    background-color: #3d9d9d;
+  }
+  
+  input[type="text"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border-bottom: 1px solid #4abdac;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4abdac;
+    color: #ffffff;
+  }
+  
+  /* Positioning for the logo */
+img.logo {
+  width: 2cm;
+  top: 25px;
+  right: 25px;
+}
